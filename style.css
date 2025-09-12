@@ -1,18 +1,7 @@
-/* Fonte e Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
 
 /* Containers */
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
@@ -23,32 +12,48 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 20px 0;
+  padding: 0; 
 }
+
 .header .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  height: 70px; 
 }
+
 .logo {
+  background-color: #1f3c5c;
   color: #fff;
   font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  height: 90px;  
+  margin-top: -10px; 
+  border-radius: 4px;
 }
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  align-items: center; 
+  height: 100%;        
 }
+
 .navbar a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
 }
+
 .navbar .btn {
   background: #1f3c5c;
   padding: 8px 16px;
   border-radius: 4px;
 }
+
 
 /* Hero */
 .hero {
@@ -62,13 +67,16 @@ body {
 }
 .hero h2 {
   font-size: 3rem;
+  color: #1f3c5c;
 }
-.hero .subtitulo {
+.hero .sub_title {
   font-size: 1.5rem;
   margin: 10px 0;
+  color: #1f3c5c;
 }
-.hero .descricao {
+.hero .description {
   margin-bottom: 20px;
+  font-size: 25px;
 }
 .btn-destaque {
   background: #f9a825;
@@ -78,35 +86,85 @@ body {
   border-radius: 4px;
   font-weight: 700;
 }
+.btn-destaque:hover {
+  background: #c17900; 
+  transform: scale(0.50); 
+}
+
 
 /* História */
 .historia {
   padding: 80px 0;
   text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
+
 .historia h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #7d8a97; 
+  font-weight: 400;
 }
-.historia span {
-  color: #1f3c5c;
+
+.historia h2 span {
+  color: #1f3c5c; 
+  font-weight: 600;
+}
+.subtexto {
+  font-size: 1.1rem;
+  color: #9aa5b1; 
+  margin-bottom: 40px;
+}
+
+.subtexto span {
+  color: #f9a825; 
+  font-weight: 600;
 }
 .historia-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-top: 40px;
+  align-items: start;
 }
+.historia-grid .imagens {
+  display: grid;
+  gap: 20px;
+}
+
 .historia-grid img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 6px;
+  object-fit: cover;
 }
 .historia .texto {
   text-align: left;
 }
-.historia a {
-  color: #f9a825;
+
+.historia .texto h3 {
+  font-size: 1.4rem;
+  color: #1f3c5c;
+  margin-bottom: 15px;
 }
+
+.historia .texto p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.historia .texto a {
+  color: #f9a825;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.historia .texto a:hover {
+  text-decoration: underline;
+}
+.historia .texto strong {
+  color: #1f3c5c;
+}
+
 
 /* Serviços */
 .servicos {
@@ -118,46 +176,134 @@ body {
 .servicos h2 span {
   color: #ffff;
 }
-.grid-servicos {
+.title_service{
+  display: flex;
+  justify-content: center;
+  border: solid;
+}
+.card{
+  display: flex;
+  margin: 15px 0;
+  border: solid;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-top: 40px;
-}
-.servico h3 {
-  margin: 15px 0;
+
 }
 
-/* Depoimentos */
+.grid-servicos {
+  display: flex;
+  flex-wrap: wrap;         
+  justify-content: space-between;
+  gap: 40px 60px;         
+  padding: 40px 0;
+}
+
+.card {
+  flex: 0 0 45%;         
+  display: flex;
+  align-items: flex-start; 
+  gap: 15px;
+  color: #fff;
+}
+
+.card img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f9a825; 
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Testemunhas */
 .depoimentos {
   background: url('assets/images/testemunha-bg.jpg') no-repeat center/cover;
+  position: relative;
   padding: 80px 0;
-  color: #fff;
   text-align: center;
 }
-.depoimentos h2 span {
+.title_testemunha{
+  display: flex;
+  justify-content: center;
+}
+.depoimentos .container {
+  position: relative;
+  z-index: 1;
+}
+.depoimentos h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
   color: #1f3c5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.depoimentos h2 span {
+  color: #1f3c5c; 
+}
+.depoimentos h2 {
+  color: #6c7a89; 
 }
 .grid-depoimentos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
+}
+.depoimento {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .depoimento img {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
+  margin-top: -70px; /* sobe a foto */
+  margin-bottom: 15px;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+.depoimento h3 {
+  color: #1f3c5c;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.depoimento .viagens {
+  color: #f9a825;
+  font-weight: 600;
   margin-bottom: 15px;
 }
+.depoimento p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+
 
 /* Footer */
 .footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
   background: #1f3c5c;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
+
 .footer .btn-destaque {
   margin-top: 10px;
   display: inline-block;

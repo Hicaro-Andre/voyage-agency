@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viagens Incríveis</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="globals.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -30,8 +31,8 @@
     <section class="hero">
       <div class="hero-content">
         <h2>Viagens Incríveis</h2>
-        <p class="subtitulo">Uma experiência única.</p>
-        <p class="descricao">
+        <p class="sub_title">Uma experiência única.</p>
+        <p class="description">
           Proporcionamos momentos incríveis que inspiram você a ser você.
         </p>
         <a href="#" class="btn btn-destaque">Comece hoje</a>
@@ -78,10 +79,13 @@
       <!-- Serviços -->
       <section id="servicos" class="servicos">
         <div class="container">
-          <img src="assets/icons/star.svg" alt="" />
-          <h2>Nossos <span>Serviços</span></h2>
+          <div class="title_service">
+            <img src="assets/icons/star.svg" alt="" />
+            <h2>Nossos <span>Serviços</span></h2>
+          </div>
+
           <div class="grid-servicos">
-            <div class="servico">
+            <div class="card">
               <img src="assets/icons/rain.svg" alt="" />
               <h3>Veja a previsão do tempo</h3>
               <p>
@@ -89,7 +93,7 @@
                 chover nos próximos 20 minutos.
               </p>
             </div>
-            <div class="servico">
+            <div class="card">
               <img src="assets/icons/wifi.svg" alt="" />
               <h3>Wi-Fi Zone</h3>
               <p>
@@ -97,7 +101,7 @@
                 com o mundo.
               </p>
             </div>
-            <div class="servico">
+            <div class="card">
               <img src="assets/icons/globe.svg" alt="" />
               <h3>Guia Incrível</h3>
               <p>
@@ -105,7 +109,7 @@
                 destinos.
               </p>
             </div>
-            <div class="servico">
+            <div class="card">
               <img src="assets/icons/fire.svg" alt="" />
               <h3>Kit de sobrevivência</h3>
               <p>
@@ -120,8 +124,11 @@
       <!-- Testemunhas -->
       <section id="testemunhas" class="depoimentos">
         <div class="container">
-          <img src="assets/icons/comment.svg" alt="" />
-          <h2><span>Depoimentos</span> Reais</h2>
+          <div class="title_testemunha">
+            <img src="assets/icons/comment.svg" alt="" />
+            <h2><span>Depoimentos</span> Reais</h2>
+          </div>
+
           <div class="grid-depoimentos">
             <div class="depoimento">
               <img src="assets/images/testemunha-renata-hi-dpi.jpg" alt="" />
