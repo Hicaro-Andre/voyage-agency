@@ -1,74 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agência de Viagens</title>
+    <title>Viagens Incríveis</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <header>
-      <nav>
-        <h1>Realizando Sonhos</h1>
-        <ul>
-          <li><a href="#historia">Nossa História</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#testemunhas">Depoimentos</a></li>
-          <li><a href="#contato">Entre em Contato</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Realizando Sonhos</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#historia">Nossa História</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#testemunhas">Testemunhas</a></li>
+            <li><a href="#contato" class="btn">Entre em Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="hero">
-      <h2>Viagens Incríveis</h2>
-      <p>Uma experiência única.</p>
-      <a href="#contato">Comece hoje</a>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Viagens Incríveis</h2>
+        <p class="subtitulo">Uma experiência única.</p>
+        <p class="descricao">
+          Proporcionamos momentos incríveis que inspiram você a ser você.
+        </p>
+        <a href="#" class="btn btn-destaque">Comece hoje</a>
+      </div>
     </section>
 
+    <!-- História -->
     <main>
-      <section id="historia">
-        <h2>A primeira viagem que planejamos foi a nossa</h2>
-        <p>Desde então, proporcionamos experiências...</p>
-        <article>
-          <h3>Veja como tudo começou</h3>
-          <p>Texto introdutório...</p>
-        </article>
+      <section id="historia" class="historia container">
+        <h2>A primeira viagem que planejamos <span>foi a nossa</span></h2>
+        <p class="subtexto">
+          Desde então, proporcionamos a melhor experiência de
+          <span>viagens para todos</span>.
+        </p>
+
+        <div class="historia-grid">
+          <div class="imagens">
+            <img
+              src="assets/images/primeira-viagem.jpg"
+              alt="Casal de mãos dadas"
+            />
+            <img src="assets/images/como-comecou.jpg" alt="Mulher viajando" />
+          </div>
+          <div class="texto">
+            <h3>Veja como tudo começou ...</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Duis aute irure dolor in <strong>reprehenderit</strong> in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- Serviços -->
-      <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <ul>
-          <li>Veja a previsão do tempo</li>
-          <li>Wi-Fi Zone</li>
-          <li>Guia Incrível</li>
-          <li>Kit de sobrevivência</li>
-        </ul>
+      <section id="servicos" class="servicos">
+        <div class="container">
+          <img src="assets/icons/star.svg" alt="" />
+          <h2>Nossos <span>Serviços</span></h2>
+          <div class="grid-servicos">
+            <div class="servico">
+              <img src="assets/icons/rain.svg" alt="" />
+              <h3>Veja a previsão do tempo</h3>
+              <p>
+                Baixe nosso aplicativo e vamos enviar um aviso se está prestes a
+                chover nos próximos 20 minutos.
+              </p>
+            </div>
+            <div class="servico">
+              <img src="assets/icons/wifi.svg" alt="" />
+              <h3>Wi-Fi Zone</h3>
+              <p>
+                Nós priorizamos viagens para lugares onde você possa se conectar
+                com o mundo.
+              </p>
+            </div>
+            <div class="servico">
+              <img src="assets/icons/globe.svg" alt="" />
+              <h3>Guia Incrível</h3>
+              <p>
+                Nós já percorremos todos os cantos do planeta para os melhores
+                destinos.
+              </p>
+            </div>
+            <div class="servico">
+              <img src="assets/icons/fire.svg" alt="" />
+              <h3>Kit de sobrevivência</h3>
+              <p>
+                Toda vez que você fizer uma reserva, enviamos um kit de
+                sobrevivência.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Depoimentos -->
-      <section id="testemunhas">
-        <h2>Depoimentos Reais</h2>
-        <article>
-          <h3>Renata Vasconcelos</h3>
-          <p>Depoimento...</p>
-        </article>
-        <article>
-          <h3>João Pedro</h3>
-          <p>Depoimento...</p>
-        </article>
-        <article>
-          <h3>Gata Mimi</h3>
-          <p>Depoimento...</p>
-        </article>
+      <!-- Testemunhas -->
+      <section id="testemunhas" class="depoimentos">
+        <div class="container">
+          <img src="assets/icons/comment.svg" alt="" />
+          <h2><span>Depoimentos</span> Reais</h2>
+          <div class="grid-depoimentos">
+            <div class="depoimento">
+              <img src="assets/images/testemunha-renata-hi-dpi.jpg" alt="" />
+              <h3>Renata Vasconcelos</h3>
+              <p class="viagens">9 Viagens</p>
+              <p>
+                “Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.”
+              </p>
+            </div>
+            <div class="depoimento">
+              <img src="assets/images/testemunha-joao-hi-dpi.jpg" alt="" />
+              <h3>João Pedro</h3>
+              <p class="viagens">4 Viagens</p>
+              <p>
+                “Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.”
+              </p>
+            </div>
+            <div class="depoimento">
+              <img src="assets/images/testemunha-cat-hi-dpi.jpg" alt="" />
+              <h3>Gata Mimi</h3>
+              <p class="viagens">6 Viagens</p>
+              <p>
+                “Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.”
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
-      <p>&copy; 2017 Todos os direitos reservados.</p>
-      <a href="#contato">Entre em Contato</a>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Copyright © 2017 Todos os direitos reservados.</p>
+      <a href="#contato" class="btn btn-destaque">Entre em Contato</a>
     </footer>
   </body>
 </html>
