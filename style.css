@@ -26,13 +26,12 @@
 .logo {
   background-color: #1f3c5c;
   color: #fff;
-  font-weight: 700;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   padding: 0 25px;
   height: 90px;  
-  border-radius: 4px;
+  border-radius: 2px;
   margin-top: 0;
   position: relative;
 }
@@ -47,7 +46,6 @@
 .navbar a {
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
 }
 .navbar a:hover{
   color: #e0e0e0;
@@ -72,8 +70,9 @@
   color: #fff;
 }
 .hero h2 {
-  font-size: 4rem;
+  font-size: 4.2rem;
   color: #1f3c5c;
+  font-weight: 300;
 }
 .hero .sub_title {
   font-size: 2.5rem;
@@ -81,8 +80,9 @@
   color: #1f3c5c;
 }
 .hero .description {
-  margin-bottom: 20px;
+  padding: 20px;
   font-size: 22px;
+  margin-bottom: 20px;
 }
 .btn-destaque {
   background: #f9a825;
@@ -90,7 +90,6 @@
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 4px;
-  font-weight: 700;
 }
 .btn-destaque:hover {
   background: #c17900; 
@@ -106,10 +105,10 @@
 }
 
 .historia h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 10px;
   color: #1f3c5c; 
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .historia h2 span {
@@ -117,24 +116,29 @@
   font-weight: 700;
 }
 .subtexto {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: #f9a825; 
   margin-bottom: 40px;
   font-weight: 400;
+  margin: 5px;
+  padding: 10px;
 }
 .subtexto span {
   font-weight: 600;
 }
 
-/* .historia_content{
-  border: solid;
-} */
 .content_one img{
   width: 100%;
 }
 
 .content_two {
   display: flex;
+  gap: 40px;
+}
+.content_two img {
+  width: 300px;  
+  height: 350px;  
+  border-radius: 8px; 
 }
 
 .historia_texto{
@@ -142,7 +146,9 @@
 }
 
 .historia_texto h3{
-  margin: 20px;
+  font-size: 2.4rem;
+  font-weight: 200;
+  margin-left: 20px;
   color: #1f3c5c;
 }
 .historia_texto p {
@@ -174,6 +180,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  font-size: 1.8rem;
 }
 .grid-servicos {
   display: flex;
@@ -191,22 +198,15 @@
   flex: 0 0 45%;         
   display: flex;
   align-items: flex-start; 
-  gap: 30px;
   color: #fff;
 }
 .card img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   flex-shrink: 0;
 }
 .card_itens{
- 
-}
-
-.card img {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
+ padding: 0 50px 0 50px; 
 }
 
 .card h3 {
@@ -229,11 +229,12 @@
   position: relative;
   padding: 80px 0;
   text-align: center;
+  
 }
 .title_testemunha{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 .depoimentos .container {
   position: relative;
@@ -258,7 +259,6 @@
 .grid-depoimentos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
   margin-top: 50px;
 }
 .depoimento {
@@ -266,6 +266,7 @@
   padding: 30px 20px;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
 }
 .depoimento img {
   width: 110px;
